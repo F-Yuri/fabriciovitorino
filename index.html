@@ -46,7 +46,7 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:14px 2
 .logo-badge{font-family:system-ui,-apple-system,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.04em;color:#7A7670;white-space:nowrap;flex-shrink:0}
 
 /* SECTIONS */
-.section{padding:28px 20px 32px}
+.section{padding:28px 20px 40px}
 .sec-hdr{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px}
 .sec-title{font-size:29px;font-weight:normal}
 .sec-more{font-family:system-ui,-apple-system,sans-serif;font-size:12px;color:#C41B3F;cursor:pointer;text-decoration:none;letter-spacing:0.04em}
@@ -58,7 +58,7 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:14px 2
 .tab.on{background:#1C1B18;color:#F5F1E8;border-color:#1C1B18}
 
 /* CARDS */
-.cards{display:flex;flex-direction:column;gap:10px;padding-bottom:8px}
+.cards{display:flex;flex-direction:column;gap:10px}
 .card{background:#FFFFFF;border:0.5px solid #DDD8CE;cursor:pointer;transition:border-color 0.15s;text-decoration:none;display:block}
 .card:hover{border-color:#1C1B18}
 .card-inner{display:grid;grid-template-columns:88px 1fr}
@@ -182,95 +182,6 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
     <button class="tab" data-filter="ac" data-en="Research" data-pt="Pesquisa">Pesquisa</button>
   </div>
   <div class="cards" id="cards-container">
-
-    <a class="card" data-cat="tv" href="https://www.youtube.com/watch?v=EuWGiws6e18" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="Jornal Nacional · Jun 2025" data-pt="Jornal Nacional · Jun 2025">Jornal Nacional · Jun 2025</div>
-          <div class="card-title" data-en="Russia and Ukraine fail to advance in ceasefire negotiations" data-pt="Rússia e Ucrânia não avançam nas negociações por um cessar-fogo">Rússia e Ucrânia não avançam nas negociações por um cessar-fogo</div>
-          <div class="card-prog">TV Globo</div>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" data-cat="tv" href="https://g1.globo.com/jornal-nacional/noticia/2026/02/24/inicio-da-invasao-da-ucrania-pela-russia-completa-4-anos.ghtml" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="Jornal Nacional · Feb 2026" data-pt="Jornal Nacional · Fev 2026">Jornal Nacional · Fev 2026</div>
-          <div class="card-title" data-en="Four years since the invasion of Ukraine begins" data-pt="Início da invasão da Ucrânia pela Rússia completa 4 anos">Início da invasão da Ucrânia pela Rússia completa 4 anos</div>
-          <div class="card-prog">TV Globo</div>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" data-cat="pod" href="https://g1.globo.com/podcast/o-assunto/noticia/2025/10/27/a-resistencia-ucraniana-e-a-pressao-contra-a-russia-o-assunto-1585.ghtml" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="O Assunto · Oct 2025" data-pt="O Assunto · Out 2025">O Assunto · Out 2025</div>
-          <div class="card-title" data-en="Ukrainian resistance and pressure against Russia" data-pt="A resistência ucraniana e a pressão contra a Rússia">A resistência ucraniana e a pressão contra a Rússia</div>
-          <div class="card-prog">G1 / Globo Podcasts</div>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" data-cat="pod" href="https://g1.globo.com/podcast/o-assunto/noticia/2022/03/31/o-assunto-676-donbass-a-guerra-antes-da-guerra.ghtml" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="O Assunto · Mar 2022" data-pt="O Assunto · Mar 2022">O Assunto · Mar 2022</div>
-          <div class="card-title" data-en="Donbass: the war before the war" data-pt="Donbass: a guerra antes da guerra">Donbass: a guerra antes da guerra</div>
-          <div class="card-prog">G1 / Globo Podcasts</div>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" data-cat="tv" href="https://g1.globo.com/globonews/globonews-internacional/video/ataque-a-crimeia-inicia-nova-fase-na-guerra-na-ucrania-10848291.ghtml" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="GloboNews Internacional · Aug 2022" data-pt="GloboNews Internacional · Ago 2022">GloboNews Internacional · Ago 2022</div>
-          <div class="card-title" data-en="Attack on Crimea opens a new phase in the war in Ukraine" data-pt="Ataque à Crimeia inicia nova fase na guerra na Ucrânia">Ataque à Crimeia inicia nova fase na guerra na Ucrânia</div>
-          <div class="card-prog">GloboNews</div>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" data-cat="newspaper" href="https://oglobo.globo.com/mundo/noticia/2026/01/25/ucranianos-descrevem-como-e-ficar-sem-agua-luz-e-calefacao-por-ataques-russos-veja-depoimentos.ghtml" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="O Globo · Jan 2026" data-pt="O Globo · Jan 2026">O Globo · Jan 2026</div>
-          <div class="card-title" data-en="Ukrainians describe living without water, electricity and heating amid Russian attacks" data-pt="Ucranianos descrevem como é ficar sem água, luz e calefação por ataques russos">Ucranianos descrevem como é ficar sem água, luz e calefação por ataques russos</div>
-          <div class="card-prog">O Globo</div>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" data-cat="radio" href="https://cbn.globoradio.globo.com/media/audio/395517/dez-meses-de-guerra-na-ucrania-inverno-se-aproxima.htm" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="O Mundo em Meia Hora · Dec 2022" data-pt="O Mundo em Meia Hora · Dez 2022">O Mundo em Meia Hora · Dez 2022</div>
-          <div class="card-title" data-en="Ten months of war in Ukraine as winter approaches" data-pt="Dez meses de guerra na Ucrânia: o inverno se aproxima">Dez meses de guerra na Ucrânia: o inverno se aproxima</div>
-          <div class="card-prog">CBN</div>
-        </div>
-      </div>
-    </a>
-
-    <!-- MAGAZINE/REVISTAS -->
-    <a class="card" data-cat="magazine" href="https://epocanegocios.pressreader.com/epoca-negocios/20260305" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb magazine" style="background:#1A0A14;border-left:3px solid #F472B6">◈ REV</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="Época Negócios · Mar 2026" data-pt="Época Negócios · Mar 2026">Época Negócios · Mar 2026</div>
-          <div class="card-title" data-en="A energia do futuro: gargalos e um raio-x da situação atual do Brasil" data-pt="A energia do futuro: gargalos e um raio-x da situação atual do Brasil">A energia do futuro: gargalos e um raio-x da situação atual do Brasil</div>
-          <div class="card-prog">Época Negócios</div>
-        </div>
-      </div>
-    </a>
     <a class="card" data-cat="magazine" href="https://quatrocincoum.com.br/resenhas/literatura/um-dj-na-trincheira/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb magazine" style="background:#1A0A14;border-left:3px solid #F472B6">◈ REV</div>
@@ -292,27 +203,161 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
     <!-- RADIO GAUCHA -->
-    <a class="card" data-cat="radio" href="https://soundcloud.com/radiogaucha/mestre-em-russia-fabricio-vitorino-sobre-crise-envolvendo-russia-e-ucrania/sets" target="_blank" rel="noopener">
+    <a class="card" data-cat="magazine" href="https://epocanegocios.pressreader.com/epoca-negocios/20260305" target="_blank" rel="noopener">
       <div class="card-inner">
-        <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
+        <div class="card-thumb magazine" style="background:#1A0A14;border-left:3px solid #F472B6">◈ REV</div>
         <div class="card-meta">
-          <div class="card-venue" data-en="Rádio Gaúcha · Feb 2022" data-pt="Rádio Gaúcha · Fev 2022">Rádio Gaúcha · Fev 2022</div>
-          <div class="card-title" data-en="Master's in Russian culture: analysis of the Russia-Ukraine crisis" data-pt="Mestre em cultura russa analisa a crise envolvendo Rússia e Ucrânia">Mestre em cultura russa analisa a crise envolvendo Rússia e Ucrânia</div>
-          <div class="card-prog">Gaúcha Timeline</div>
+          <div class="card-venue" data-en="Época Negócios · Mar 2026" data-pt="Época Negócios · Mar 2026">Época Negócios · Mar 2026</div>
+          <div class="card-title" data-en="A energia do futuro: gargalos e um raio-x da situação atual do Brasil" data-pt="A energia do futuro: gargalos e um raio-x da situação atual do Brasil">A energia do futuro: gargalos e um raio-x da situação atual do Brasil</div>
+          <div class="card-prog">Época Negócios</div>
         </div>
       </div>
     </a>
-    <a class="card" data-cat="radio" href="https://www.youtube.com/watch?v=NTZTmrHCv6o" target="_blank" rel="noopener">
+    <a class="card" data-cat="newspaper" href="https://timesofindia.indiatimes.com/toi-plus/international/bombs-cant-build-a-republic/articleshow/129097402.cms" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="Times of India · Mar 2026" data-pt="Times of India · Mar 2026">Times of India · Mar 2026</div>
+          <div class="card-title" data-en="Bombs Can't Build A Republic" data-pt="Bombs Can't Build A Republic">Bombs Can't Build A Republic</div>
+          <div class="card-prog">Times of India</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="newspaper" href="https://www.estadao.com.br/internacional/como-o-mcdonalds-mais-perigoso-do-mundo-vende-seus-big-macs-na-ucrania/" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="Estadão · Mar 2026" data-pt="Estadão · Mar 2026">Estadão · Mar 2026</div>
+          <div class="card-title" data-en="How the world's most dangerous McDonald's sells Big Macs in Ukraine" data-pt="Como o McDonald's mais perigoso do mundo vende seus Big Macs na Ucrânia">Como o McDonald's mais perigoso do mundo vende seus Big Macs na Ucrânia</div>
+          <div class="card-prog">Estadão</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="tv" href="https://g1.globo.com/jornal-nacional/noticia/2026/02/24/inicio-da-invasao-da-ucrania-pela-russia-completa-4-anos.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="Jornal Nacional · Feb 2026" data-pt="Jornal Nacional · Fev 2026">Jornal Nacional · Fev 2026</div>
+          <div class="card-title" data-en="Four years since the invasion of Ukraine begins" data-pt="Início da invasão da Ucrânia pela Rússia completa 4 anos">Início da invasão da Ucrânia pela Rússia completa 4 anos</div>
+          <div class="card-prog">TV Globo</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="internet" href="https://cbn.globo.com/mundo/noticia/2026/02/21/roraimense-enganado-carioca-voluntario-os-brasileiros-no-front-em-4-anos-de-guerra-entre-russia-e-ucrania.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="CBN · Feb 2026" data-pt="CBN · Fev 2026">CBN · Fev 2026</div>
+          <div class="card-title" data-en="Brazilians on the front: 4 years of war between Russia and Ukraine" data-pt="Brasileiros no front: 4 anos de guerra entre Rússia e Ucrânia">Brasileiros no front: 4 anos de guerra entre Rússia e Ucrânia</div>
+          <div class="card-prog">CBN.com</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="newspaper" href="https://oglobo.globo.com/mundo/noticia/2026/01/25/ucranianos-descrevem-como-e-ficar-sem-agua-luz-e-calefacao-por-ataques-russos-veja-depoimentos.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="O Globo · Jan 2026" data-pt="O Globo · Jan 2026">O Globo · Jan 2026</div>
+          <div class="card-title" data-en="Ukrainians describe living without water, electricity and heating amid Russian attacks" data-pt="Ucranianos descrevem como é ficar sem água, luz e calefação por ataques russos">Ucranianos descrevem como é ficar sem água, luz e calefação por ataques russos</div>
+          <div class="card-prog">O Globo</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="newspaper" href="https://oglobo.globo.com/mundo/noticia/2026/01/25/russia-reforca-tatica-de-inverno-belico-para-impelir-ucrania-a-capitulacao.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="O Globo · Jan 2026" data-pt="O Globo · Jan 2026">O Globo · Jan 2026</div>
+          <div class="card-title" data-en="Russia reinforces 'war winter' tactic to push Ukraine to capitulate" data-pt="Rússia reforça tática de 'inverno bélico' para impelir Ucrânia à capitulação">Rússia reforça tática de 'inverno bélico' para impelir Ucrânia à capitulação</div>
+          <div class="card-prog">O Globo</div>
+        </div>
+      </div>
+    </a>
+    <!-- MORE TV -->
+    <a class="card" data-cat="video" href="https://www.youtube.com/watch?v=WojEpMrNoDc" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb video" style="background:#1A0F2E;border-left:3px solid #A78BFA">▶ WEB</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="UATV · Nov 2025" data-pt="UATV · Nov 2025">UATV · Nov 2025</div>
+          <div class="card-title" data-en="Brazil is an important battlefield in the information war" data-pt="O Brasil é um campo de batalha importante na guerra informacional">O Brasil é um campo de batalha importante na guerra informacional</div>
+          <div class="card-prog">UATV — Ukrainian Public Television</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="tv" href="https://www.youtube.com/watch?v=MgzkRZNymIE" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="GloboNews Internacional · Nov 2025" data-pt="GloboNews Internacional · Nov 2025">GloboNews Internacional · Nov 2025</div>
+          <div class="card-title" data-en="Ukraine war: does the US plan favor Russia?" data-pt="Guerra na Ucrânia: plano dos EUA favorece a Rússia?">Guerra na Ucrânia: plano dos EUA favorece a Rússia?</div>
+          <div class="card-prog">GloboNews Internacional</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="pod" href="https://g1.globo.com/podcast/o-assunto/noticia/2025/10/27/a-resistencia-ucraniana-e-a-pressao-contra-a-russia-o-assunto-1585.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="O Assunto · Oct 2025" data-pt="O Assunto · Out 2025">O Assunto · Out 2025</div>
+          <div class="card-title" data-en="Ukrainian resistance and pressure against Russia" data-pt="A resistência ucraniana e a pressão contra a Rússia">A resistência ucraniana e a pressão contra a Rússia</div>
+          <div class="card-prog">G1 / Globo Podcasts</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="radio" href="https://open.spotify.com/episode/6jsozL36OwJJcayUdAabvv" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
         <div class="card-meta">
-          <div class="card-venue" data-en="Rádio Gaúcha · Jun 2023" data-pt="Rádio Gaúcha · Jun 2023">Rádio Gaúcha · Jun 2023</div>
-          <div class="card-title" data-en="Wagner Group revolt: consequences for Russia and Ukraine" data-pt="Motim do Grupo Wagner: consequências para Rússia e Ucrânia">Motim do Grupo Wagner: consequências para Rússia e Ucrânia</div>
-          <div class="card-prog">Gaúcha Atualidade</div>
+          <div class="card-venue" data-en="CBN Mundo em Meia Hora · Aug 2025" data-pt="CBN Mundo em Meia Hora · Ago 2025">CBN Mundo em Meia Hora · Ago 2025</div>
+          <div class="card-title" data-en="Alaska Meeting: Trump and Putin's geopolitical chess" data-pt="Reunião do Alasca: o xadrez geopolítico entre Trump e Putin">Reunião do Alasca: o xadrez geopolítico entre Trump e Putin</div>
+          <div class="card-prog">CBN</div>
         </div>
       </div>
     </a>
     <!-- INTERNET -->
+    <a class="card" data-cat="video" href="https://www.youtube.com/watch?v=Cwsn-OotDkE" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb video" style="background:#1A0F2E;border-left:3px solid #A78BFA">▶ WEB</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="UOL News · Jul 2025" data-pt="UOL News · Jul 2025">UOL News · Jul 2025</div>
+          <div class="card-title" data-en="Analysis: Ukraine-Russia war latest developments" data-pt="Análise: os últimos desdobramentos da guerra Ucrânia-Rússia">Análise: os últimos desdobramentos da guerra Ucrânia-Rússia</div>
+          <div class="card-prog">UOL News</div>
+        </div>
+      </div>
+    </a>
+    <!-- RADIO -->
+    <a class="card" data-cat="tv" href="https://www.youtube.com/watch?v=EuWGiws6e18" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="Jornal Nacional · Jun 2025" data-pt="Jornal Nacional · Jun 2025">Jornal Nacional · Jun 2025</div>
+          <div class="card-title" data-en="Russia and Ukraine fail to advance in ceasefire negotiations" data-pt="Rússia e Ucrânia não avançam nas negociações por um cessar-fogo">Rússia e Ucrânia não avançam nas negociações por um cessar-fogo</div>
+          <div class="card-prog">TV Globo</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="internet" href="https://ge.globo.com/futebol/times/botafogo/noticia/2025/05/22/o-que-mudou-entre-o-acerto-com-artur-e-a-ruptura-com-wendel-entenda-as-questoes-geopoliticas-citadas-pelo-botafogo.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="GE.Globo · May 2025" data-pt="GE.Globo · Mai 2025">GE.Globo · Mai 2025</div>
+          <div class="card-title" data-en="The geopolitical issues cited by Botafogo in the Wendel case" data-pt="As questões geopolíticas citadas pelo Botafogo no caso Wendel">As questões geopolíticas citadas pelo Botafogo no caso Wendel</div>
+          <div class="card-prog">Globoesporte.com</div>
+        </div>
+      </div>
+    </a>
+    <!-- NEWSPAPER -->
+    <a class="card" data-cat="tv" href="https://www.youtube.com/watch?v=w-ZpRlMDRgE" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="GloboNews Internacional · May 2025" data-pt="GloboNews Internacional · Mai 2025">GloboNews Internacional · Mai 2025</div>
+          <div class="card-title" data-en="US-Ukraine agreement: what's at stake" data-pt="Acordo EUA-Ucrânia: o que está em jogo">Acordo EUA-Ucrânia: o que está em jogo</div>
+          <div class="card-prog">GloboNews Internacional</div>
+        </div>
+      </div>
+    </a>
+    <!-- MORE PODCAST -->
     <a class="card" data-cat="internet" href="https://oglobo.globo.com/blogs/guga-chacra/post/2025/03/entrevista-como-ucranianos-veem-a-briga-zelensky-versus-trump.ghtml" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
@@ -323,6 +368,27 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
         </div>
       </div>
     </a>
+    <a class="card" data-cat="pod" href="https://g1.globo.com/podcast/o-assunto/noticia/2025/03/06/o-assunto-1420-ucrania-a-merce-dos-interesses-ocultos-de-trump.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="O Assunto #1420 · Mar 2025" data-pt="O Assunto #1420 · Mar 2025">O Assunto #1420 · Mar 2025</div>
+          <div class="card-title" data-en="Ukraine at the mercy of Trump's hidden interests" data-pt="Ucrânia à mercê dos interesses ocultos de Trump">Ucrânia à mercê dos interesses ocultos de Trump</div>
+          <div class="card-prog">O Assunto · Globo</div>
+        </div>
+      </div>
+    </a>
+    <!-- EXISTING ABRAJI CARD FOLLOWS -->
+    <a class="card" data-cat="radio" href="https://cbn.globo.com/brasil/entrevista/2024/03/17/o-sistema-eleitoral-russo-e-uma-fachada-democratica-que-encobre-a-continuidade-do-autoritarismo-de-putin.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="CBN Show da Notícia · Mar 2024" data-pt="CBN Show da Notícia · Mar 2024">CBN Show da Notícia · Mar 2024</div>
+          <div class="card-title" data-en="The Russian electoral system is a democratic facade for Putin's authoritarianism" data-pt="O sistema eleitoral russo é uma fachada democrática que encobre o autoritarismo de Putin">O sistema eleitoral russo é uma fachada democrática que encobre o autoritarismo de Putin</div>
+          <div class="card-prog">CBN</div>
+        </div>
+      </div>
+    </a>
     <a class="card" data-cat="internet" href="https://www.osul.com.br/ucrania-acusa-russia-de-usar-missil-hipersonico/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
@@ -330,16 +396,6 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
           <div class="card-venue" data-en="O Sul · Feb 2024" data-pt="O Sul · Fev 2024">O Sul · Fev 2024</div>
           <div class="card-title" data-en="Ukraine accuses Russia of using hypersonic missile" data-pt="Ucrânia acusa Rússia de usar míssil hipersônico">Ucrânia acusa Rússia de usar míssil hipersônico</div>
           <div class="card-prog">O Sul</div>
-        </div>
-      </div>
-    </a>
-    <a class="card" data-cat="internet" href="https://orbismedia.org/distribuicao-emocao-e-tecnologia-o-legado-do-buzzfeed-news-para-o-jornalismo/" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="Orbis · Jul 2023" data-pt="Orbis · Jul 2023">Orbis · Jul 2023</div>
-          <div class="card-title" data-en="Distribution, emotion and technology: the BuzzFeed News legacy for journalism" data-pt="Distribuição, emoção e tecnologia: o legado do BuzzFeed News para o jornalismo">Distribuição, emoção e tecnologia: o legado do BuzzFeed News para o jornalismo</div>
-          <div class="card-prog">Orbis Media · SXSW</div>
         </div>
       </div>
     </a>
@@ -354,34 +410,87 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
     <!-- VIDEO/WEB 2022 -->
-    <a class="card" data-cat="video" href="https://www.youtube.com/watch?v=x3xF3dXnvuE" target="_blank" rel="noopener">
+    <a class="card" data-cat="internet" href="https://orbismedia.org/distribuicao-emocao-e-tecnologia-o-legado-do-buzzfeed-news-para-o-jornalismo/" target="_blank" rel="noopener">
       <div class="card-inner">
-        <div class="card-thumb video" style="background:#1A0F2E;border-left:3px solid #A78BFA">▶ WEB</div>
+        <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
         <div class="card-meta">
-          <div class="card-venue" data-en="Emerj · Jan 2022" data-pt="Emerj · Jan 2022">Emerj · Jan 2022</div>
-          <div class="card-title" data-en="Russia: between East and West" data-pt="Rússia: entre o Oriente e o Ocidente">Rússia: entre o Oriente e o Ocidente</div>
-          <div class="card-prog">Emerj</div>
+          <div class="card-venue" data-en="Orbis · Jul 2023" data-pt="Orbis · Jul 2023">Orbis · Jul 2023</div>
+          <div class="card-title" data-en="Distribution, emotion and technology: the BuzzFeed News legacy for journalism" data-pt="Distribuição, emoção e tecnologia: o legado do BuzzFeed News para o jornalismo">Distribuição, emoção e tecnologia: o legado do BuzzFeed News para o jornalismo</div>
+          <div class="card-prog">Orbis Media · SXSW</div>
         </div>
       </div>
     </a>
-    <a class="card" data-cat="video" href="https://www.youtube.com/watch?v=GLmk-DFaOsI" target="_blank" rel="noopener">
+    <a class="card" data-cat="ac" href="https://congresso.abraji.org.br/memoria-mesa/como-enfrentamos-putin-o-jornalismo-russo-no-exilio" target="_blank" rel="noopener">
       <div class="card-inner">
-        <div class="card-thumb video" style="background:#1A0F2E;border-left:3px solid #A78BFA">▶ WEB</div>
+        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ EVENT</div>
         <div class="card-meta">
-          <div class="card-venue" data-en="Metrópoles · Feb 2022" data-pt="Metrópoles · Fev 2022">Metrópoles · Fev 2022</div>
-          <div class="card-title" data-en="Live analysis: Russia invades Ukraine" data-pt="Ao vivo: Rússia invade a Ucrânia — análise em tempo real">Ao vivo: Rússia invade a Ucrânia — análise em tempo real</div>
-          <div class="card-prog">Metrópoles</div>
+          <div class="card-venue" data-en="Abraji · Jul 2023" data-pt="Abraji · Jul 2023">Abraji · Jul 2023</div>
+          <div class="card-title" data-en="How do we fight Putin? Russian journalism in exile" data-pt="Como enfrentamos Putin? O jornalismo russo no exílio">Como enfrentamos Putin? O jornalismo russo no exílio</div>
+          <div class="card-prog">Congresso Internacional de Jornalismo Investigativo</div>
         </div>
       </div>
     </a>
-    <!-- TV 2022 — invasion coverage -->
-    <a class="card" data-cat="tv" href="https://g1.globo.com/globonews/conexao-globonews/video/a-gente-nao-acreditou-que-essa-invasao-fosse-acontecer-afirma-jornalista-10332146.ghtml" target="_blank" rel="noopener">
+    <a class="card" data-cat="radio" href="https://www.youtube.com/watch?v=NTZTmrHCv6o" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="Rádio Gaúcha · Jun 2023" data-pt="Rádio Gaúcha · Jun 2023">Rádio Gaúcha · Jun 2023</div>
+          <div class="card-title" data-en="Wagner Group revolt: consequences for Russia and Ukraine" data-pt="Motim do Grupo Wagner: consequências para Rússia e Ucrânia">Motim do Grupo Wagner: consequências para Rússia e Ucrânia</div>
+          <div class="card-prog">Gaúcha Atualidade</div>
+        </div>
+      </div>
+    </a>
+    <!-- INTERNET -->
+    <a class="card" data-cat="pod" href="https://cbn.globoradio.globo.com/media/audio/401369/guerra-na-ucrania-completa-1-ano-sem-perspectiva-d.htm" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="CBN Internacional · Feb 2023" data-pt="CBN Internacional · Fev 2023">CBN Internacional · Fev 2023</div>
+          <div class="card-title" data-en="One year of war in Ukraine: no end in sight" data-pt="1 ano de guerra na Ucrânia sem perspectiva de fim">1 ano de guerra na Ucrânia sem perspectiva de fim</div>
+          <div class="card-prog">Podcast CBN Internacional · 24/fev/2023</div>
+        </div>
+      </div>
+    </a>
+    <!-- VIDEO/WEB -->
+    <a class="card" data-cat="radio" href="https://cbn.globoradio.globo.com/media/audio/395517/dez-meses-de-guerra-na-ucrania-inverno-se-aproxima.htm" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="O Mundo em Meia Hora · Dec 2022" data-pt="O Mundo em Meia Hora · Dez 2022">O Mundo em Meia Hora · Dez 2022</div>
+          <div class="card-title" data-en="Ten months of war in Ukraine as winter approaches" data-pt="Dez meses de guerra na Ucrânia: o inverno se aproxima">Dez meses de guerra na Ucrânia: o inverno se aproxima</div>
+          <div class="card-prog">CBN</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- MAGAZINE/REVISTAS -->
+    <a class="card" data-cat="tv" href="https://youtu.be/4rDka3NygVQ" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
-          <div class="card-venue" data-en="Conexão GloboNews · Feb 2022" data-pt="Conexão GloboNews · Fev 2022">Conexão GloboNews · Fev 2022</div>
-          <div class="card-title" data-en="We didn't believe this invasion would happen, says journalist" data-pt="A gente não acreditou que essa invasão fosse acontecer">A gente não acreditou que essa invasão fosse acontecer</div>
-          <div class="card-prog">Conexão GloboNews · 24/fev/2022</div>
+          <div class="card-venue" data-en="GloboNews · Sep 2022" data-pt="GloboNews · Set 2022">GloboNews · Set 2022</div>
+          <div class="card-title" data-en="Farewell to Gorbachev: analysis of his legacy" data-pt="Adeus a Gorbachev: análise do legado do último líder soviético">Adeus a Gorbachev: análise do legado do último líder soviético</div>
+          <div class="card-prog">Edição das 10 · 3/set/2022</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="tv" href="https://g1.globo.com/globonews/globonews-internacional/video/ataque-a-crimeia-inicia-nova-fase-na-guerra-na-ucrania-10848291.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="GloboNews Internacional · Aug 2022" data-pt="GloboNews Internacional · Ago 2022">GloboNews Internacional · Ago 2022</div>
+          <div class="card-title" data-en="Attack on Crimea opens a new phase in the war in Ukraine" data-pt="Ataque à Crimeia inicia nova fase na guerra na Ucrânia">Ataque à Crimeia inicia nova fase na guerra na Ucrânia</div>
+          <div class="card-prog">GloboNews</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" data-cat="pod" href="https://g1.globo.com/podcast/o-assunto/noticia/2022/03/31/o-assunto-676-donbass-a-guerra-antes-da-guerra.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="O Assunto · Mar 2022" data-pt="O Assunto · Mar 2022">O Assunto · Mar 2022</div>
+          <div class="card-title" data-en="Donbass: the war before the war" data-pt="Donbass: a guerra antes da guerra">Donbass: a guerra antes da guerra</div>
+          <div class="card-prog">G1 / Globo Podcasts</div>
         </div>
       </div>
     </a>
@@ -415,191 +524,43 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
         </div>
       </div>
     </a>
-    <a class="card" data-cat="tv" href="https://youtu.be/4rDka3NygVQ" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="GloboNews · Sep 2022" data-pt="GloboNews · Set 2022">GloboNews · Set 2022</div>
-          <div class="card-title" data-en="Farewell to Gorbachev: analysis of his legacy" data-pt="Adeus a Gorbachev: análise do legado do último líder soviético">Adeus a Gorbachev: análise do legado do último líder soviético</div>
-          <div class="card-prog">Edição das 10 · 3/set/2022</div>
-        </div>
-      </div>
-    </a>
-    <a class="card" data-cat="tv" href="https://globoplay.globo.com/v/10122182/" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="GloboNews Internacional · Dec 2021" data-pt="GloboNews Internacional · Dez 2021">GloboNews Internacional · Dez 2021</div>
-          <div class="card-title" data-en="Analysis: Russia-Ukraine tensions escalate on the eve of war" data-pt="Tensões Rússia-Ucrânia escalam às vésperas da guerra">Tensões Rússia-Ucrânia escalam às vésperas da guerra</div>
-          <div class="card-prog">GloboNews Internacional</div>
-        </div>
-      </div>
-    </a>
-    <!-- PODCAST 2020/2022/2023 -->
-    <a class="card" data-cat="pod" href="https://g1.globo.com/globonews/podcast/globonews-internacional/noticia/2020/01/17/globonews-internacional-21-putinismo-em-alta.ghtml" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="GloboNews Internacional Podcast · Jan 2020" data-pt="GloboNews Internacional Podcast · Jan 2020">GloboNews Internacional Podcast · Jan 2020</div>
-          <div class="card-title" data-en="Putinism on the rise" data-pt="Putinismo em alta">Putinismo em alta</div>
-          <div class="card-prog">GloboNews Internacional</div>
-        </div>
-      </div>
-    </a>
-    <a class="card" data-cat="pod" href="https://cbn.globoradio.globo.com/media/audio/401369/guerra-na-ucrania-completa-1-ano-sem-perspectiva-d.htm" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="CBN Internacional · Feb 2023" data-pt="CBN Internacional · Fev 2023">CBN Internacional · Fev 2023</div>
-          <div class="card-title" data-en="One year of war in Ukraine: no end in sight" data-pt="1 ano de guerra na Ucrânia sem perspectiva de fim">1 ano de guerra na Ucrânia sem perspectiva de fim</div>
-          <div class="card-prog">Podcast CBN Internacional · 24/fev/2023</div>
-        </div>
-      </div>
-    </a>
-    <!-- VIDEO/WEB -->
-    <a class="card" data-cat="video" href="https://www.youtube.com/watch?v=WojEpMrNoDc" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb video" style="background:#1A0F2E;border-left:3px solid #A78BFA">▶ WEB</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="UATV · Nov 2025" data-pt="UATV · Nov 2025">UATV · Nov 2025</div>
-          <div class="card-title" data-en="Brazil is an important battlefield in the information war" data-pt="O Brasil é um campo de batalha importante na guerra informacional">O Brasil é um campo de batalha importante na guerra informacional</div>
-          <div class="card-prog">UATV — Ukrainian Public Television</div>
-        </div>
-      </div>
-    </a>
-    <a class="card" data-cat="video" href="https://www.youtube.com/watch?v=Cwsn-OotDkE" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb video" style="background:#1A0F2E;border-left:3px solid #A78BFA">▶ WEB</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="UOL News · Jul 2025" data-pt="UOL News · Jul 2025">UOL News · Jul 2025</div>
-          <div class="card-title" data-en="Analysis: Ukraine-Russia war latest developments" data-pt="Análise: os últimos desdobramentos da guerra Ucrânia-Rússia">Análise: os últimos desdobramentos da guerra Ucrânia-Rússia</div>
-          <div class="card-prog">UOL News</div>
-        </div>
-      </div>
-    </a>
-    <!-- RADIO -->
-    <a class="card" data-cat="radio" href="https://cbn.globo.com/brasil/entrevista/2024/03/17/o-sistema-eleitoral-russo-e-uma-fachada-democratica-que-encobre-a-continuidade-do-autoritarismo-de-putin.ghtml" target="_blank" rel="noopener">
+    <a class="card" data-cat="radio" href="https://soundcloud.com/radiogaucha/mestre-em-russia-fabricio-vitorino-sobre-crise-envolvendo-russia-e-ucrania/sets" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
         <div class="card-meta">
-          <div class="card-venue" data-en="CBN Show da Notícia · Mar 2024" data-pt="CBN Show da Notícia · Mar 2024">CBN Show da Notícia · Mar 2024</div>
-          <div class="card-title" data-en="The Russian electoral system is a democratic facade for Putin's authoritarianism" data-pt="O sistema eleitoral russo é uma fachada democrática que encobre o autoritarismo de Putin">O sistema eleitoral russo é uma fachada democrática que encobre o autoritarismo de Putin</div>
-          <div class="card-prog">CBN</div>
+          <div class="card-venue" data-en="Rádio Gaúcha · Feb 2022" data-pt="Rádio Gaúcha · Fev 2022">Rádio Gaúcha · Fev 2022</div>
+          <div class="card-title" data-en="Master's in Russian culture: analysis of the Russia-Ukraine crisis" data-pt="Mestre em cultura russa analisa a crise envolvendo Rússia e Ucrânia">Mestre em cultura russa analisa a crise envolvendo Rússia e Ucrânia</div>
+          <div class="card-prog">Gaúcha Timeline</div>
         </div>
       </div>
     </a>
-    <a class="card" data-cat="radio" href="https://open.spotify.com/episode/6jsozL36OwJJcayUdAabvv" target="_blank" rel="noopener">
+    <a class="card" data-cat="video" href="https://www.youtube.com/watch?v=GLmk-DFaOsI" target="_blank" rel="noopener">
       <div class="card-inner">
-        <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
+        <div class="card-thumb video" style="background:#1A0F2E;border-left:3px solid #A78BFA">▶ WEB</div>
         <div class="card-meta">
-          <div class="card-venue" data-en="CBN Mundo em Meia Hora · Aug 2025" data-pt="CBN Mundo em Meia Hora · Ago 2025">CBN Mundo em Meia Hora · Ago 2025</div>
-          <div class="card-title" data-en="Alaska Meeting: Trump and Putin's geopolitical chess" data-pt="Reunião do Alasca: o xadrez geopolítico entre Trump e Putin">Reunião do Alasca: o xadrez geopolítico entre Trump e Putin</div>
-          <div class="card-prog">CBN</div>
+          <div class="card-venue" data-en="Metrópoles · Feb 2022" data-pt="Metrópoles · Fev 2022">Metrópoles · Fev 2022</div>
+          <div class="card-title" data-en="Live analysis: Russia invades Ukraine" data-pt="Ao vivo: Rússia invade a Ucrânia — análise em tempo real">Ao vivo: Rússia invade a Ucrânia — análise em tempo real</div>
+          <div class="card-prog">Metrópoles</div>
         </div>
       </div>
     </a>
-    <!-- INTERNET -->
-    <a class="card" data-cat="internet" href="https://cbn.globo.com/mundo/noticia/2026/02/21/roraimense-enganado-carioca-voluntario-os-brasileiros-no-front-em-4-anos-de-guerra-entre-russia-e-ucrania.ghtml" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="CBN · Feb 2026" data-pt="CBN · Fev 2026">CBN · Fev 2026</div>
-          <div class="card-title" data-en="Brazilians on the front: 4 years of war between Russia and Ukraine" data-pt="Brasileiros no front: 4 anos de guerra entre Rússia e Ucrânia">Brasileiros no front: 4 anos de guerra entre Rússia e Ucrânia</div>
-          <div class="card-prog">CBN.com</div>
-        </div>
-      </div>
-    </a>
-    <a class="card" data-cat="internet" href="https://ge.globo.com/futebol/times/botafogo/noticia/2025/05/22/o-que-mudou-entre-o-acerto-com-artur-e-a-ruptura-com-wendel-entenda-as-questoes-geopoliticas-citadas-pelo-botafogo.ghtml" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="GE.Globo · May 2025" data-pt="GE.Globo · Mai 2025">GE.Globo · Mai 2025</div>
-          <div class="card-title" data-en="The geopolitical issues cited by Botafogo in the Wendel case" data-pt="As questões geopolíticas citadas pelo Botafogo no caso Wendel">As questões geopolíticas citadas pelo Botafogo no caso Wendel</div>
-          <div class="card-prog">Globoesporte.com</div>
-        </div>
-      </div>
-    </a>
-    <!-- NEWSPAPER -->
-    <a class="card" data-cat="newspaper" href="https://timesofindia.indiatimes.com/toi-plus/international/bombs-cant-build-a-republic/articleshow/129097402.cms" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="Times of India · Mar 2026" data-pt="Times of India · Mar 2026">Times of India · Mar 2026</div>
-          <div class="card-title" data-en="Bombs Can't Build A Republic" data-pt="Bombs Can't Build A Republic">Bombs Can't Build A Republic</div>
-          <div class="card-prog">Times of India</div>
-        </div>
-      </div>
-    </a>
-    <a class="card" data-cat="newspaper" href="https://www.estadao.com.br/internacional/como-o-mcdonalds-mais-perigoso-do-mundo-vende-seus-big-macs-na-ucrania/" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="Estadão · Mar 2026" data-pt="Estadão · Mar 2026">Estadão · Mar 2026</div>
-          <div class="card-title" data-en="How the world's most dangerous McDonald's sells Big Macs in Ukraine" data-pt="Como o McDonald's mais perigoso do mundo vende seus Big Macs na Ucrânia">Como o McDonald's mais perigoso do mundo vende seus Big Macs na Ucrânia</div>
-          <div class="card-prog">Estadão</div>
-        </div>
-      </div>
-    </a>
-    <a class="card" data-cat="newspaper" href="https://oglobo.globo.com/mundo/noticia/2026/01/25/russia-reforca-tatica-de-inverno-belico-para-impelir-ucrania-a-capitulacao.ghtml" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="O Globo · Jan 2026" data-pt="O Globo · Jan 2026">O Globo · Jan 2026</div>
-          <div class="card-title" data-en="Russia reinforces 'war winter' tactic to push Ukraine to capitulate" data-pt="Rússia reforça tática de 'inverno bélico' para impelir Ucrânia à capitulação">Rússia reforça tática de 'inverno bélico' para impelir Ucrânia à capitulação</div>
-          <div class="card-prog">O Globo</div>
-        </div>
-      </div>
-    </a>
-    <!-- MORE TV -->
-    <a class="card" data-cat="tv" href="https://www.youtube.com/watch?v=MgzkRZNymIE" target="_blank" rel="noopener">
+    <!-- TV 2022 — invasion coverage -->
+    <a class="card" data-cat="tv" href="https://g1.globo.com/globonews/conexao-globonews/video/a-gente-nao-acreditou-que-essa-invasao-fosse-acontecer-afirma-jornalista-10332146.ghtml" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
-          <div class="card-venue" data-en="GloboNews Internacional · Nov 2025" data-pt="GloboNews Internacional · Nov 2025">GloboNews Internacional · Nov 2025</div>
-          <div class="card-title" data-en="Ukraine war: does the US plan favor Russia?" data-pt="Guerra na Ucrânia: plano dos EUA favorece a Rússia?">Guerra na Ucrânia: plano dos EUA favorece a Rússia?</div>
-          <div class="card-prog">GloboNews Internacional</div>
+          <div class="card-venue" data-en="Conexão GloboNews · Feb 2022" data-pt="Conexão GloboNews · Fev 2022">Conexão GloboNews · Fev 2022</div>
+          <div class="card-title" data-en="We didn't believe this invasion would happen, says journalist" data-pt="A gente não acreditou que essa invasão fosse acontecer">A gente não acreditou que essa invasão fosse acontecer</div>
+          <div class="card-prog">Conexão GloboNews · 24/fev/2022</div>
         </div>
       </div>
     </a>
-    <a class="card" data-cat="tv" href="https://www.youtube.com/watch?v=w-ZpRlMDRgE" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="GloboNews Internacional · May 2025" data-pt="GloboNews Internacional · Mai 2025">GloboNews Internacional · Mai 2025</div>
-          <div class="card-title" data-en="US-Ukraine agreement: what's at stake" data-pt="Acordo EUA-Ucrânia: o que está em jogo">Acordo EUA-Ucrânia: o que está em jogo</div>
-          <div class="card-prog">GloboNews Internacional</div>
-        </div>
-      </div>
-    </a>
-    <!-- MORE PODCAST -->
-    <a class="card" data-cat="pod" href="https://g1.globo.com/podcast/o-assunto/noticia/2025/03/06/o-assunto-1420-ucrania-a-merce-dos-interesses-ocultos-de-trump.ghtml" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="O Assunto #1420 · Mar 2025" data-pt="O Assunto #1420 · Mar 2025">O Assunto #1420 · Mar 2025</div>
-          <div class="card-title" data-en="Ukraine at the mercy of Trump's hidden interests" data-pt="Ucrânia à mercê dos interesses ocultos de Trump">Ucrânia à mercê dos interesses ocultos de Trump</div>
-          <div class="card-prog">O Assunto · Globo</div>
-        </div>
-      </div>
-    </a>
-    <!-- EXISTING ABRAJI CARD FOLLOWS -->
-        <a class="card" data-cat="ac" href="https://congresso.abraji.org.br/memoria-mesa/como-enfrentamos-putin-o-jornalismo-russo-no-exilio" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ EVENT</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="Abraji · Jul 2023" data-pt="Abraji · Jul 2023">Abraji · Jul 2023</div>
-          <div class="card-title" data-en="How do we fight Putin? Russian journalism in exile" data-pt="Como enfrentamos Putin? O jornalismo russo no exílio">Como enfrentamos Putin? O jornalismo russo no exílio</div>
-          <div class="card-prog">Congresso Internacional de Jornalismo Investigativo</div>
-        </div>
-      </div>
-    </a>
-
   </div>
 </div>
 
 <!-- UATV HIGHLIGHT -->
 <div class="highlight">
-  <div class="hl-tag" data-en="International highlight" data-pt="Destaque internacional">Destaque internacional</div>
+  <div class="hl-tag" data-en="International highlight" data-pt="Destaque internacional">International highlight</div>
   <div class="hl-quote" data-en='"Researcher on information warfare Fabrício Vitorino: Brazil is an important battlefield"' data-pt='"Pesquisador de guerra informacional Fabrício Vitorino: o Brasil é um campo de batalha importante"'>"Researcher on information warfare Fabrício Vitorino: Brazil is an important battlefield"</div>
   <a class="hl-src" href="https://www.youtube.com/watch?v=WojEpMrNoDc" target="_blank" rel="noopener" style="color:#5A5850;text-decoration:underline;text-underline-offset:3px">UATV — Ukrainian Public Television · Nov 2025 →</a>
 </div>
@@ -607,67 +568,15 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
 <!-- RESEARCH -->
 <div class="section" id="research" style="background:#EEEAE0">
   <div class="sec-hdr">
-    <h2 class="sec-title" data-en="Research" data-pt="Pesquisa">Pesquisa</h2>
+    <h2 class="sec-title" data-en="Research" data-pt="Pesquisa">Research</h2>
   </div>
   <div class="cards">
-
-    <a class="card" href="https://uacrisis.org/en/m-yaka-syla-dezinformatsiya-i-geopolityka-yak-rosiya-posylyuye-vplyv-u-latynskij-amerytsi" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ CONF</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="UCMC · Jan 2026" data-pt="UCMC · Jan 2026">UCMC · Jan 2026</div>
-          <div class="card-title" data-en="Expert — Russia's Influence in Latin America and the Caribbean" data-pt="Especialista — Influência russa na América Latina e Caribe">Especialista — Influência russa na América Latina e Caribe</div>
-          <div class="card-prog">Ukraine Crisis Media Center</div>
-        </div>
-      </div>
-    </a>
-    <a class="card" href="https://seperi.paginas.ufsc.br/" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ ORG</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="UFSC · Nov 2025" data-pt="UFSC · Nov 2025">UFSC · Nov 2025</div>
-          <div class="card-title" data-en="Organizing committee — V SEPERI (Seminar on International Relations Research)" data-pt="Comissão organizadora — V SEPERI (Seminário de Pesquisa em Relações Internacionais)">Comissão organizadora — V SEPERI (Seminário de Pesquisa em Relações Internacionais)</div>
-          <div class="card-prog">PPGRI · UFSC</div>
-        </div>
-      </div>
-    </a>
-  </div>
-    <a class="card" href="https://www.portaldosjornalistas.com.br/jornalista-brasileiro-participa-do-donbas-media-forum-em-kiev/" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ CONF</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="Kyiv · Oct 2025" data-pt="Kyiv · Out 2025">Kyiv · Out 2025</div>
-          <div class="card-title" data-en="Panelist — Donbas Media Forum (10th edition)" data-pt="Painelista — Donbas Media Forum (10ª edição)">Painelista — Donbas Media Forum (10ª edição)</div>
-          <div class="card-prog">Largest media event in Ukraine</div>
-        </div>
-      </div>
-    </a>
-    <div class="card" style="cursor:default">
-      <div class="card-inner">
-        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ LECT</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="Kyiv + Odesa · Oct 2025" data-pt="Kyiv + Odesa · Out 2025">Kyiv + Odesa · Out 2025</div>
-          <div class="card-title" data-en="Guest lecturer at KNU Taras Shevchenko (2×) and Mechnikov University of Odesa" data-pt="Professor convidado na KNU Taras Shevchenko (2×) e Universidade Mechnikov de Odesa">Professor convidado na KNU Taras Shevchenko (2×) e Universidade Mechnikov de Odesa</div>
-          <div class="card-prog">Pesquisa de campo · Ucrânia</div>
-        </div>
-      </div>
-    </div>
-    <a class="card" href="https://www.youtube.com/watch?v=lFeIT3h5ldA" target="_blank" rel="noopener">
-      <div class="card-inner">
-        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ EVENT</div>
-        <div class="card-meta">
-          <div class="card-venue" data-en="NPSeD · UFSC · Sep 2025" data-pt="NPSeD · UFSC · Set 2025">NPSeD · UFSC · Set 2025</div>
-          <div class="card-title" data-en="Organizer — A Outra Frente de Batalha (with Nobel Peace Prize laureate Oleksandra Matviichuk)" data-pt="Organizador — A Outra Frente de Batalha (com a Nobel da Paz Oleksandra Matviichuk)">Organizador — A Outra Frente de Batalha (com a Nobel da Paz Oleksandra Matviichuk)</div>
-          <div class="card-prog">Webinar · NPSeD / UFSC</div>
-        </div>
-      </div>
-    </a>
     <a class="card" href="https://neu-ucrania.netlify.app" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ NEU</div>
         <div class="card-meta">
           <div class="card-venue" data-en="UFSC · 2024–" data-pt="UFSC · 2024–">UFSC · 2024–</div>
-          <div class="card-title" data-en="Núcleo de Estudos da Ucrânia (NEU) — Ukrainian Studies Center at USP's Department of Political Science" data-pt="Núcleo de Estudos da Ucrânia (NEU) — Centro de pesquisa em estudos ucranianos com parcerias em Kyiv e Viena">Núcleo de Estudos da Ucrânia (NEU) — Centro de pesquisa em estudos ucranianos com parcerias em Kyiv e Viena</div>
+          <div class="card-title" data-en="Núcleo de Estudos da Ucrânia (NEU) — Ukrainian Studies Center at USP's Department of Political Science" data-pt="Núcleo de Estudos da Ucrânia (NEU) — Centro de pesquisa em estudos ucranianos com parcerias em Kyiv e Viena">Núcleo de Estudos da Ucrânia (NEU) — Ukrainian Studies Center with partnerships in Kyiv and Vienna</div>
           <div class="card-prog">NEU / NPSeD</div>
         </div>
       </div>
@@ -692,29 +601,79 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
         </div>
       </div>
     </a>
+    <a class="card" href="https://www.youtube.com/watch?v=lFeIT3h5ldA" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ EVENT</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="NPSeD · UFSC · Sep 2025" data-pt="NPSeD · UFSC · Set 2025">NPSeD · UFSC · Set 2025</div>
+          <div class="card-title" data-en="Organizer — A Outra Frente de Batalha (with Nobel Peace Prize laureate Oleksandra Matviichuk)" data-pt="Organizador — A Outra Frente de Batalha (com a Nobel da Paz Oleksandra Matviichuk)">Organizador — A Outra Frente de Batalha (com a Nobel da Paz Oleksandra Matviichuk)</div>
+          <div class="card-prog">Webinar · NPSeD / UFSC</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="https://www.portaldosjornalistas.com.br/jornalista-brasileiro-participa-do-donbas-media-forum-em-kiev/" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ CONF</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="Kyiv · Oct 2025" data-pt="Kyiv · Out 2025">Kyiv · Out 2025</div>
+          <div class="card-title" data-en="Panelist — Donbas Media Forum (10th edition)" data-pt="Painelista — Donbas Media Forum (10ª edição)">Painelista — Donbas Media Forum (10ª edição)</div>
+          <div class="card-prog">Largest media event in Ukraine</div>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="https://uacrisis.org/en/m-yaka-syla-dezinformatsiya-i-geopolityka-yak-rosiya-posylyuye-vplyv-u-latynskij-amerytsi" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ CONF</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="UCMC · Jan 2026" data-pt="UCMC · Jan 2026">UCMC · Jan 2026</div>
+          <div class="card-title" data-en="Expert — Russia's Influence in Latin America and the Caribbean" data-pt="Especialista — Influência russa na América Latina e Caribe">Especialista — Influência russa na América Latina e Caribe</div>
+          <div class="card-prog">Ukraine Crisis Media Center</div>
+        </div>
+      </div>
+    </a>
+    <div class="card" style="cursor:default">
+      <div class="card-inner">
+        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ LECT</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="Kyiv + Odesa · Oct 2025" data-pt="Kyiv + Odesa · Out 2025">Kyiv + Odesa · Out 2025</div>
+          <div class="card-title" data-en="Guest lecturer at KNU Taras Shevchenko (2×) and Mechnikov University of Odesa" data-pt="Professor convidado na KNU Taras Shevchenko (2×) e Universidade Mechnikov de Odesa">Professor convidado na KNU Taras Shevchenko (2×) e Universidade Mechnikov de Odesa</div>
+          <div class="card-prog">Pesquisa de campo · Ucrânia</div>
+        </div>
+      </div>
+    </div>
+    <a class="card" href="https://seperi.paginas.ufsc.br/" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ ORG</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="UFSC · Nov 2025" data-pt="UFSC · Nov 2025">UFSC · Nov 2025</div>
+          <div class="card-title" data-en="Organizing committee — V SEPERI (Seminar on International Relations Research)" data-pt="Comissão organizadora — V SEPERI (Seminário de Pesquisa em Relações Internacionais)">Comissão organizadora — V SEPERI</div>
+          <div class="card-prog">PPGRI · UFSC</div>
+        </div>
+      </div>
+    </a>
   </div>
 </div>
 
 <!-- ABOUT -->
 <div class="about" id="about">
   <div class="at-tag" data-en="About" data-pt="Sobre">Sobre</div>
-  <h2 class="at-hl" data-en="At the intersection of journalism, digital and geopolitics" data-pt="Na fronteira entre o jornalismo, o digital e a geopolítica">Na fronteira entre o jornalismo, o digital e a geopolítica</h2>
-  <p class="at-body" data-en="After 20 years building digital journalism at scale — editor-in-chief of TechTudo (Globo), coordinator of Globo.com, manager at NSC and Canaltech — I turned to academic research on sovereignty, disinformation and information warfare in post-Soviet Eastern Europe. Mentor in programmes by Google News Initiative and ICFJ/Meta. Speaker at SXSW (7×), Web Summit (6×), Slush Helsinki and global media events." data-pt="Depois de 20 anos construindo jornalismo digital em escala — editor-chefe do TechTudo (Globo), coordenador do Globo.com, gerente na NSC e no Canaltech — me dediquei à pesquisa sobre soberania, desinformação e guerra da informação no Leste Europeu pós-soviético. Mentor em programas da Google News Initiative e do ICFJ/Meta. Palestrante no SXSW (7×), Web Summit (6×), Slush Helsinki e eventos globais de mídia.">Depois de 20 anos construindo jornalismo digital em escala — editor-chefe do TechTudo (Globo), coordenador do Globo.com, gerente na NSC e no Canaltech — me dediquei à pesquisa sobre soberania, desinformação e guerra da informação no Leste Europeu pós-soviético. Mentor em programas da Google News Initiative e do ICFJ/Meta. Palestrante no SXSW (7×), Web Summit (6×), Slush Helsinki e eventos globais de mídia.</p>
+  <h2 class="at-hl" data-en="At the intersection of journalism, digital and geopolitics" data-pt="Na fronteira entre o jornalismo, o digital e a geopolítica">At the intersection of journalism, digital and geopolitics</h2>
+  <p class="at-body" data-en="After 20 years building digital journalism at scale — editor-in-chief of TechTudo (Globo), coordinator of Globo.com, manager at NSC and Canaltech — I turned to academic research on sovereignty, disinformation and information warfare in post-Soviet Eastern Europe. Mentor in programmes by Google News Initiative and ICFJ/Meta. Speaker at SXSW (7×), Web Summit (6×), Slush Helsinki and global media events." data-pt="Depois de 20 anos construindo jornalismo digital em escala — editor-chefe do TechTudo (Globo), coordenador do Globo.com, gerente na NSC e no Canaltech — me dediquei à pesquisa sobre soberania, desinformação e guerra da informação no Leste Europeu pós-soviético. Mentor em programas da Google News Initiative e do ICFJ/Meta. Palestrante no SXSW (7×), Web Summit (6×), Slush Helsinki e eventos globais de mídia.">After 20 years building digital journalism at scale — editor-in-chief of TechTudo (Globo), coordinator of Globo.com, manager at NSC and Canaltech — I turned to academic research on sovereignty, disinformation and information warfare in post-Soviet Eastern Europe. Mentor in programmes by Google News Initiative and ICFJ/Meta. Speaker at SXSW (7×), Web Summit (6×), Slush Helsinki and global media events.</p>
   <div class="cv-list">
-    <div class="cv-row"><span class="cv-item" data-en="PhD · International Relations · UFSC" data-pt="Doutorado · Relações Internacionais · UFSC">Doutorado · Relações Internacionais · UFSC</span><span class="cv-yr">2025–</span></div>
+    <div class="cv-row"><span class="cv-item" data-en="PhD · International Relations · UFSC" data-pt="Doutorado · Relações Internacionais · UFSC">PhD · International Relations · UFSC</span><span class="cv-yr">2025–</span></div>
     <div class="cv-row"><span class="cv-item" data-en="Analyst · GloboNews, CBN and others" data-pt="Comentarista · GloboNews, CBN e outros">Comentarista · GloboNews, CBN e outros</span><span class="cv-yr">2022–</span></div>
-    <div class="cv-row"><span class="cv-item" data-en="Researcher · NEU / NPSeD" data-pt="Pesquisador · NEU / NPSeD">Pesquisador · NEU / NPSeD</span><span class="cv-yr">2024–</span></div>
+    <div class="cv-row"><span class="cv-item" data-en="Researcher · NEU / NPSeD" data-pt="Pesquisador · NEU / NPSeD">Researcher · NEU / NPSeD</span><span class="cv-yr">2024–</span></div>
     <div class="cv-row"><span class="cv-item" data-en="Mentor · Google News Initiative" data-pt="Mentor · Google News Initiative">Mentor · Google News Initiative</span><span class="cv-yr">2023–</span></div>
     <div class="cv-row"><span class="cv-item" data-en="Digital content manager · NSC / G1 SC" data-pt="Gerente de conteúdo digital · NSC / G1 SC">Gerente de conteúdo digital · NSC / G1 SC</span><span class="cv-yr">2019–23</span></div>
-    <div class="cv-row"><span class="cv-item" data-en="MSc · Russian Literature · USP" data-pt="Mestrado · Literatura Russa · USP">Mestrado · Literatura Russa · USP</span><span class="cv-yr">2015</span></div>
-    <div class="cv-row"><span class="cv-item" data-en="Editor-in-chief · TechTudo · Globo.com" data-pt="Editor-chefe · TechTudo · Globo.com">Editor-chefe · TechTudo · Globo.com</span><span class="cv-yr">2012–16</span></div>
-    <div class="cv-row"><span class="cv-item" data-en="Coordinator · Globo.com portal" data-pt="Coordenador · portal Globo.com">Coordenador · portal Globo.com</span><span class="cv-yr">2006–19</span></div>
+    <div class="cv-row"><span class="cv-item" data-en="MSc · Russian Literature · USP" data-pt="Mestrado · Literatura Russa · USP">MSc · Russian Literature · USP</span><span class="cv-yr">2015</span></div>
+    <div class="cv-row"><span class="cv-item" data-en="Editor-in-chief · TechTudo · Globo.com" data-pt="Editor-chefe · TechTudo · Globo.com">Editor-in-chief · TechTudo · Globo.com</span><span class="cv-yr">2012–16</span></div>
+    <div class="cv-row"><span class="cv-item" data-en="Coordinator · Globo.com portal" data-pt="Coordenador · portal Globo.com">Coordinator · Globo.com portal</span><span class="cv-yr">2006–19</span></div>
   </div>
 </div>
 
 <!-- CONTACT -->
 <div class="contact" id="contact">
-  <h2 class="contact-title" data-en="Contact" data-pt="Contato">Contato</h2>
+  <h2 class="contact-title" data-en="Contact" data-pt="Contato">Contact</h2>
   <div class="contact-links">
     <a class="contact-link" href="mailto:fab.vitorino@proton.me">
       <span class="cl-label" data-en="Email" data-pt="Email">Email</span>
@@ -730,7 +689,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
     </a>
     <a class="contact-link" href="http://lattes.cnpq.br/4694191675344962" target="_blank" rel="noopener">
       <span class="cl-label">Lattes</span>
-      <div style="display:flex;align-items:center;gap:8px"><span class="cl-val" data-en="CV Lattes" data-pt="Currículo Lattes">Currículo Lattes</span><span class="cl-arrow">→</span></div>
+      <div style="display:flex;align-items:center;gap:8px"><span class="cl-val" data-en="CV Lattes" data-pt="Currículo Lattes">CV Lattes</span><span class="cl-arrow">→</span></div>
     </a>
     <a class="contact-link" href="https://orcid.org/0000-0002-0528-3463" target="_blank" rel="noopener">
       <span class="cl-label">ORCID</span>
