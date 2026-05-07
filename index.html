@@ -1203,7 +1203,6 @@ function setLang(l, btn) {
     el.textContent = el.getAttribute('data-' + l);
   });
 }
-
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', function() {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('on'));
