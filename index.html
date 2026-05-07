@@ -49,6 +49,12 @@
     "https://orcid.org/0000-0002-0528-3463"
   ]
 }
+  // Inicializa: mostra só featured
+document.querySelectorAll('.card').forEach(card => {
+  if (card.getAttribute('data-featured') === 'false') {
+    card.style.display = 'none';
+  }
+});
 </script>
 <style>
 #work,#research,#about,#contact{scroll-margin-top:56px}
