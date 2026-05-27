@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- SITE VERSION: v12.5 | 2026-05-07 | novos cards + featured 2022/2023 ocultos -->
+<!-- SITE VERSION: v12.6 | 2026-05-27 | novos cards mai/2026 + localização nas entradas -->
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
@@ -33,9 +33,7 @@
   "knowsAbout": ["Ucrânia", "Rússia", "Guerra da Informação", "Desinformação", "Leste Europeu", "Geopolítica", "Jornalismo Digital"],
   "alumniOf": [
     {"@type": "CollegeOrUniversity", "name": "Universidade Federal de Santa Catarina", "alternateName": "UFSC"},
-    {"@type": "CollegeOrUniversity", "name": "Universidade de São Paulo", "alternateName": "USP"},
-    {"@type": "CollegeOrUniversity", "name": "Universidade Federal do Rio de Janeiro", "alternateName": "UFRJ"},
-    {"@type": "CollegeOrUniversity", "name": "Universidade Federal Fluminense", "alternateName": "UFF"}
+    {"@type": "CollegeOrUniversity", "name": "Universidade de São Paulo", "alternateName": "USP"}
   ],
   "affiliation": [
     {"@type": "Organization", "name": "NPSeD — UFSC"},
@@ -96,7 +94,6 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:14px 2
 .card-thumb{height:90px;display:flex;align-items:center;justify-content:center;font-family:system-ui,-apple-system,sans-serif;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;flex-shrink:0;writing-mode:horizontal-tb}
 .card-thumb.tv{background:#1A1A18;color:#6A6860}
 .card-thumb.pod{background:#1E1228;color:#7A5A88}
-.card-thumb.press{background:#0F2218;color:#3A6A48}
 .card-thumb.ac{background:#0A1E38;color:#3A5A80}
 .card-thumb.radio{background:#3D1A0A;color:#F97316}
 .card-thumb.video{background:#1A0F2E;color:#A78BFA}
@@ -131,7 +128,6 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
 .foot-name{font-family:system-ui,-apple-system,sans-serif;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:#9B9890}
 .foot-links{display:flex;gap:16px}
 .foot-links a{font-family:system-ui,-apple-system,sans-serif;font-size:11px;color:#9B9890;text-decoration:none}
-.divider{height:0.5px;background:#DDD8CE}
 </style>
 </head>
 <body>
@@ -157,7 +153,6 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
   <a href="#contact" onclick="document.getElementById('menu').classList.remove('open')" data-en="Contact" data-pt="Contato">Contato</a>
 </div>
 
-<!-- HERO -->
 <img class="hero-photo" src="foto-donbass.jpg" alt="Fabrício Vitorino at Donbass Media Forum">
 <div class="hero-text">
   <div class="eyebrow" data-en="Journalist · IR Researcher · Eastern Europe Specialist" data-pt="Jornalista · Pesquisador em RI · Especialista em Leste Europeu">Jornalista · Pesquisador em RI · Especialista em Leste Europeu</div>
@@ -166,10 +161,9 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
 </div>
 <div class="cta-row">
   <button class="btn-p" onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})" data-en="Selected work" data-pt="Trabalhos selecionados">Trabalhos selecionados</button>
-  <button class="btn-s" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="About" data-pt="Trajetória">Trajetória</button>
+  <button class="btn-s" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" data-en="About" data-pt="Trajetória">Trajetória</button>
 </div>
 
-<!-- LOGO STRIP -->
 <div class="strip">
   <div class="strip-lbl" data-en="As seen on" data-pt="Aparições em">Aparições em</div>
   <div class="logos-scroll">
@@ -185,11 +179,10 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
   </div>
 </div>
 
-<!-- WORK -->
 <div class="section" id="work">
   <div class="sec-hdr">
     <h2 class="sec-title" data-en="Selected work" data-pt="Trabalhos selecionados">Trabalhos selecionados</h2>
-    <a class="sec-more" href="#work" onclick="document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));document.querySelector('.tab[data-filter=all]').classList.add('on');document.querySelectorAll('.card').forEach(c=>c.style.display=c.getAttribute('data-featured')=='false'?'none':'block')" data-en="View all →" data-pt="Ver todos →">Ver todos →</a>
+    <a class="sec-more" href="#work" onclick="document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));document.querySelector('.tab[data-filter=all]').classList.add('on');document.querySelectorAll('.card').forEach(c=>c.style.display=c.getAttribute('data-featured')==='false'?'none':'block')" data-en="View all →" data-pt="Ver todos →">Ver todos →</a>
   </div>
   <div class="tabs">
     <button class="tab on" data-filter="all" data-en="All" data-pt="Todos">Todos</button>
@@ -204,7 +197,51 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
   </div>
   <div class="cards" id="cards-container">
 
-    <!-- ===== 2026 MAI ===== -->
+    <!-- 2026 MAI -->
+    <a class="card" data-featured="true" data-cat="tv" href="https://www.youtube.com/watch?v=8GYQu2Zu750" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="GloboNews Internacional · May 2026" data-pt="GloboNews Internacional · Mai 2026">GloboNews Internacional · Mai 2026</div>
+          <div class="card-title" data-en="Russia launches large-scale attack on Ukraine / Xi receives Putin and Trump in one week / Ukraine absent from Beijing talks" data-pt="Rússia faz ataque de larga escala contra a Ucrânia / Xi recebe Putin e Trump em uma semana / Ucrânia foi tema ausente em Pequim">Rússia faz ataque de larga escala contra a Ucrânia / Xi recebe Putin e Trump em uma semana / Ucrânia foi tema ausente em Pequim</div>
+          <div class="card-prog">GloboNews Internacional</div>
+        </div>
+      </div>
+    </a>
+
+    <a class="card" data-featured="true" data-cat="newspaper" href="https://oglobo.globo.com/mundo/noticia/2026/05/11/fronteira-entre-dois-mundos-cidade-russofona-da-estonia-resiste-a-pressao-de-moscou.ghtml" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="O Globo · May 2026" data-pt="O Globo · Mai 2026">O Globo · Mai 2026</div>
+          <div class="card-title" data-en="Separated from Russia by a river, Narva in Estonia resists Moscow's pressure" data-pt="Separada da Rússia por um rio, Narva, na Estônia, resiste à pressão de Moscou: 'Lá eles vigiam tudo. Aqui, mandamos em nossas vidas'">Separada da Rússia por um rio, Narva, na Estônia, resiste à pressão de Moscou: 'Lá eles vigiam tudo. Aqui, mandamos em nossas vidas'</div>
+          <div class="card-prog">O Globo</div>
+        </div>
+      </div>
+    </a>
+
+    <a class="card" data-featured="true" data-cat="tv" href="https://www.youtube.com/watch?v=5Xo3QhqpUR8" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="GloboNews Internacional · May 2026" data-pt="GloboNews Internacional · Mai 2026">GloboNews Internacional · Mai 2026</div>
+          <div class="card-title" data-en="Russia-Ukraine ceasefire ends tomorrow / Is the war in Ukraine close to an end, as Putin claims?" data-pt="Cessar-fogo entre Rússia e Ucrânia termina amanhã / A Guerra na Ucrânia está perto do fim, como diz Putin?">Cessar-fogo entre Rússia e Ucrânia termina amanhã / A Guerra na Ucrânia está perto do fim, como diz Putin?</div>
+          <div class="card-prog">GloboNews Internacional</div>
+        </div>
+      </div>
+    </a>
+
+    <a class="card" data-featured="true" data-cat="radio" href="https://www.youtube.com/watch?v=ug5up0FT-aI" target="_blank" rel="noopener">
+      <div class="card-inner">
+        <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
+        <div class="card-meta">
+          <div class="card-venue" data-en="Revista CBN · May 2026" data-pt="Revista CBN · Mai 2026">Revista CBN · Mai 2026</div>
+          <div class="card-title" data-en="Ceasefire / Victory Day and its meaning for Moscow / Gulf crisis and Russian economy / Ukraine's drone warfare edge / EU after Orbán" data-pt="Cessar-fogo Rússia-Ucrânia / Dia da Vitória e seu significado para Moscou / Crise no Golfo e a economia russa / Guerra de drones: vantagem ucraniana / UE após a saída de Orbán">Cessar-fogo Rússia-Ucrânia / Dia da Vitória e seu significado para Moscou / Crise no Golfo e a economia russa / Guerra de drones: vantagem ucraniana / UE após a saída de Orbán</div>
+          <div class="card-prog">Revista CBN</div>
+        </div>
+      </div>
+    </a>
+
     <a class="card" data-featured="true" data-cat="magazine" href="https://epocanegocios.pressreader.com/epoca-negocios/20260506" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb magazine" style="background:#1A0A14;border-left:3px solid #F472B6">◈ REV</div>
@@ -216,13 +253,13 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <!-- ===== 2026 ABR ===== -->
+    <!-- 2026 ABR -->
     <a class="card" data-featured="true" data-cat="tv" href="https://www.youtube.com/watch?v=VyqelCTb81Q" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Apr 2026" data-pt="GloboNews Internacional · Abr 2026">GloboNews Internacional · Abr 2026</div>
-          <div class="card-title" data-en="US evaluates punishing Europeans / Hormuz blockade / Chernobyl 40 years" data-pt="EUA avaliam punir europeus / Bloqueio de Ormuz / Chernobyl 40 anos">EUA avaliam punir europeus / Bloqueio de Ormuz / Chernobyl 40 anos</div>
+          <div class="card-title" data-en="US evaluates punishing Europeans / Without Orbán, EU frees R$500 bi for Ukraine / Hormuz blockade / Chernobyl 40 years (from Vilnius, Lithuania)" data-pt="EUA avaliam punir europeus / Sem Orbán, UE libera R$ 500 bi para a Ucrânia / Bloqueio de Ormuz / Chernobyl 40 anos (direto de Vilnius, Lituânia)">EUA avaliam punir europeus / Sem Orbán, UE libera R$ 500 bi para a Ucrânia / Bloqueio de Ormuz / Chernobyl 40 anos (direto de Vilnius, Lituânia)</div>
           <div class="card-prog">GloboNews Internacional</div>
         </div>
       </div>
@@ -250,7 +287,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <!-- ===== 2026 MAR ===== -->
+    <!-- 2026 MAR -->
     <a class="card" data-featured="true" data-cat="newspaper" href="https://www.estadao.com.br/internacional/como-o-mcdonalds-mais-perigoso-do-mundo-vende-seus-big-macs-na-ucrania/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
@@ -284,13 +321,13 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <!-- ===== 2026 FEV ===== -->
+    <!-- 2026 FEV — direto de Kyiv -->
     <a class="card" data-featured="true" data-cat="tv" href="https://g1.globo.com/jornal-nacional/noticia/2026/02/24/inicio-da-invasao-da-ucrania-pela-russia-completa-4-anos.ghtml" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="Jornal Nacional · Feb 2026" data-pt="Jornal Nacional · Fev 2026">Jornal Nacional · Fev 2026</div>
-          <div class="card-title" data-en="Four years since the invasion of Ukraine" data-pt="Início da invasão da Ucrânia pela Rússia completa 4 anos">Início da invasão da Ucrânia pela Rússia completa 4 anos</div>
+          <div class="card-title" data-en="Four years since the invasion of Ukraine (from Kyiv, Ukraine)" data-pt="Início da invasão da Ucrânia pela Rússia completa 4 anos (direto de Kyiv, Ucrânia)">Início da invasão da Ucrânia pela Rússia completa 4 anos (direto de Kyiv, Ucrânia)</div>
           <div class="card-prog">TV Globo</div>
         </div>
       </div>
@@ -301,7 +338,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Mais · Feb 2026" data-pt="GloboNews Mais · Fev 2026">GloboNews Mais · Fev 2026</div>
-          <div class="card-title" data-en="How is Ukraine after 4 years of war?" data-pt="Como está a Ucrânia após 4 anos de guerra?">Como está a Ucrânia após 4 anos de guerra?</div>
+          <div class="card-title" data-en="How is Ukraine after 4 years of war? (from Kyiv, Ukraine)" data-pt="Como está a Ucrânia após 4 anos de guerra? (direto de Kyiv, Ucrânia)">Como está a Ucrânia após 4 anos de guerra? (direto de Kyiv, Ucrânia)</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
@@ -312,7 +349,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
         <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
         <div class="card-meta">
           <div class="card-venue" data-en="Jovem Pan · Feb 2026" data-pt="Jovem Pan · Fev 2026">Jovem Pan · Fev 2026</div>
-          <div class="card-title" data-en="Ukraine war: regions of Georgia divided between reintegration or not with Russia" data-pt="Guerra na Ucrânia: regiões da Geórgia se dividem entre reintegração ou não à Rússia">Guerra na Ucrânia: regiões da Geórgia se dividem entre reintegração ou não à Rússia</div>
+          <div class="card-title" data-en="Ukraine war: regions of Georgia divided between reintegration or not with Russia (from Kyiv, Ukraine)" data-pt="Guerra na Ucrânia: regiões da Geórgia se dividem entre reintegração ou não à Rússia (direto de Kyiv, Ucrânia)">Guerra na Ucrânia: regiões da Geórgia se dividem entre reintegração ou não à Rússia (direto de Kyiv, Ucrânia)</div>
           <div class="card-prog">Jovem Pan</div>
         </div>
       </div>
@@ -323,7 +360,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
         <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
         <div class="card-meta">
           <div class="card-venue" data-en="CBN · Feb 2026" data-pt="CBN · Fev 2026">CBN · Fev 2026</div>
-          <div class="card-title" data-en="Brazilians on the front: 4 years of war between Russia and Ukraine" data-pt="Brasileiros no front: 4 anos de guerra entre Rússia e Ucrânia">Brasileiros no front: 4 anos de guerra entre Rússia e Ucrânia</div>
+          <div class="card-title" data-en="Brazilians on the front: 4 years of war between Russia and Ukraine (from Kyiv, Ukraine)" data-pt="Brasileiros no front: 4 anos de guerra entre Rússia e Ucrânia (direto de Kyiv, Ucrânia)">Brasileiros no front: 4 anos de guerra entre Rússia e Ucrânia (direto de Kyiv, Ucrânia)</div>
           <div class="card-prog">CBN.com</div>
         </div>
       </div>
@@ -334,18 +371,19 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
         <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
         <div class="card-meta">
           <div class="card-venue" data-en="CBN · Feb 2026" data-pt="CBN · Fev 2026">CBN · Fev 2026</div>
-          <div class="card-title" data-en="Four years of war in Ukraine: prospects for the end of the conflict" data-pt="Quatro anos de guerra na Ucrânia: perspectivas para o fim do conflito">Quatro anos de guerra na Ucrânia: perspectivas para o fim do conflito</div>
+          <div class="card-title" data-en="Four years of war in Ukraine: prospects for the end of the conflict (from Kyiv, Ukraine)" data-pt="Quatro anos de guerra na Ucrânia: perspectivas para o fim do conflito (direto de Kyiv, Ucrânia)">Quatro anos de guerra na Ucrânia: perspectivas para o fim do conflito (direto de Kyiv, Ucrânia)</div>
           <div class="card-prog">CBN</div>
         </div>
       </div>
     </a>
 
+    <!-- 4cinco1 — direto de Lviv -->
     <a class="card" data-featured="true" data-cat="magazine" href="https://quatrocincoum.com.br/resenhas/literatura/um-dj-na-trincheira/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb magazine" style="background:#1A0A14;border-left:3px solid #F472B6">◈ REV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="Revista 4cinco1 · Feb 2026" data-pt="Revista 4cinco1 · Fev 2026">Revista 4cinco1 · Fev 2026</div>
-          <div class="card-title" data-en="Um DJ na trincheira" data-pt="Um DJ na trincheira">Um DJ na trincheira</div>
+          <div class="card-title" data-en="Um DJ na trincheira (from Lviv, Ukraine)" data-pt="Um DJ na trincheira (direto de Lviv, na Ucrânia)">Um DJ na trincheira (direto de Lviv, na Ucrânia)</div>
           <div class="card-prog">4cinco1 — resenha literária</div>
         </div>
       </div>
@@ -356,19 +394,19 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
         <div class="card-thumb magazine" style="background:#1A0A14;border-left:3px solid #F472B6">◈ REV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="Revista 4cinco1 · Feb 2026" data-pt="Revista 4cinco1 · Fev 2026">Revista 4cinco1 · Fev 2026</div>
-          <div class="card-title" data-en="Música contra o horror" data-pt="Música contra o horror">Música contra o horror</div>
+          <div class="card-title" data-en="Música contra o horror (from Lviv, Ukraine)" data-pt="Música contra o horror (direto de Lviv, na Ucrânia)">Música contra o horror (direto de Lviv, na Ucrânia)</div>
           <div class="card-prog">4cinco1 — entrevista</div>
         </div>
       </div>
     </a>
 
-    <!-- ===== 2026 JAN ===== -->
+    <!-- 2026 JAN -->
     <a class="card" data-featured="true" data-cat="newspaper" href="https://oglobo.globo.com/mundo/noticia/2026/01/25/ucranianos-descrevem-como-e-ficar-sem-agua-luz-e-calefacao-por-ataques-russos-veja-depoimentos.ghtml" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb newspaper" style="background:#1A1200;border-left:3px solid #D97706">◎ JORNAL</div>
         <div class="card-meta">
           <div class="card-venue" data-en="O Globo · Jan 2026" data-pt="O Globo · Jan 2026">O Globo · Jan 2026</div>
-          <div class="card-title" data-en="Ukrainians describe living without water, electricity and heating" data-pt="Ucranianos descrevem como é ficar sem água, luz e calefação por ataques russos">Ucranianos descrevem como é ficar sem água, luz e calefação por ataques russos</div>
+          <div class="card-title" data-en="Ukrainians describe living without water, electricity and heating amid Russian attacks" data-pt="Ucranianos descrevem como é ficar sem água, luz e calefação por ataques russos">Ucranianos descrevem como é ficar sem água, luz e calefação por ataques russos</div>
           <div class="card-prog">O Globo</div>
         </div>
       </div>
@@ -385,7 +423,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <!-- ===== 2025 NOV ===== -->
+    <!-- 2025 NOV -->
     <a class="card" data-featured="true" data-cat="video" href="https://www.youtube.com/watch?v=WojEpMrNoDc" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb video" style="background:#1A0F2E;border-left:3px solid #A78BFA">▶ WEB</div>
@@ -419,13 +457,13 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <!-- ===== 2025 OUT ===== -->
+    <!-- 2025 OUT — direto de Kyiv -->
     <a class="card" data-featured="true" data-cat="pod" href="https://g1.globo.com/podcast/o-assunto/noticia/2025/10/27/a-resistencia-ucraniana-e-a-pressao-contra-a-russia-o-assunto-1585.ghtml" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
         <div class="card-meta">
           <div class="card-venue" data-en="O Assunto · Oct 2025" data-pt="O Assunto · Out 2025">O Assunto · Out 2025</div>
-          <div class="card-title" data-en="Ukrainian resistance and pressure against Russia" data-pt="A resistência ucraniana e a pressão contra a Rússia">A resistência ucraniana e a pressão contra a Rússia</div>
+          <div class="card-title" data-en="Ukrainian resistance and pressure against Russia (from Kyiv, Ukraine)" data-pt="A resistência ucraniana e a pressão contra a Rússia (direto de Kyiv, Ucrânia)">A resistência ucraniana e a pressão contra a Rússia (direto de Kyiv, Ucrânia)</div>
           <div class="card-prog">G1 / Globo Podcasts</div>
         </div>
       </div>
@@ -436,7 +474,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
         <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
         <div class="card-meta">
           <div class="card-venue" data-en="CBN Jornal da CBN · Oct 2025" data-pt="CBN Jornal da CBN · Out 2025">CBN Jornal da CBN · Out 2025</div>
-          <div class="card-title" data-en="Impasse may lead to escalation of Russia-Ukraine war" data-pt="Impasse pode levar à escalada da guerra entre Rússia e Ucrânia">Impasse pode levar à escalada da guerra entre Rússia e Ucrânia</div>
+          <div class="card-title" data-en="Impasse may lead to escalation of Russia-Ukraine war (from Kyiv, Ukraine)" data-pt="Impasse pode levar à escalada da guerra entre Rússia e Ucrânia (direto de Kyiv, Ucrânia)">Impasse pode levar à escalada da guerra entre Rússia e Ucrânia (direto de Kyiv, Ucrânia)</div>
           <div class="card-prog">CBN</div>
         </div>
       </div>
@@ -447,13 +485,13 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Oct 2025" data-pt="GloboNews Internacional · Out 2025">GloboNews Internacional · Out 2025</div>
-          <div class="card-title" data-en="Zelensky criticizes allies after Russian air attack" data-pt="Zelensky critica aliados após ataque aéreo russo">Zelensky critica aliados após ataque aéreo russo</div>
+          <div class="card-title" data-en="Zelensky criticizes allies after Russian air attack (from Kyiv, Ukraine)" data-pt="Zelensky critica aliados após ataque aéreo russo (direto de Kyiv, Ucrânia)">Zelensky critica aliados após ataque aéreo russo (direto de Kyiv, Ucrânia)</div>
           <div class="card-prog">GloboNews Internacional</div>
         </div>
       </div>
     </a>
 
-    <!-- ===== 2025 SET ===== -->
+    <!-- 2025 SET -->
     <a class="card" data-featured="true" data-cat="tv" href="https://www.youtube.com/watch?v=rzwX0B_eyKE" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
@@ -487,7 +525,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <!-- ===== 2025 AGO ===== -->
+    <!-- 2025 AGO -->
     <a class="card" data-featured="true" data-cat="radio" href="https://open.spotify.com/episode/6jsozL36OwJJcayUdAabvv" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
@@ -521,7 +559,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <!-- ===== 2025 JUL ===== -->
+    <!-- 2025 JUL -->
     <a class="card" data-featured="true" data-cat="video" href="https://www.youtube.com/watch?v=Cwsn-OotDkE" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb video" style="background:#1A0F2E;border-left:3px solid #A78BFA">▶ WEB</div>
@@ -533,7 +571,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <!-- ===== 2025 JUN ===== -->
+    <!-- 2025 JUN -->
     <a class="card" data-featured="true" data-cat="tv" href="https://www.youtube.com/watch?v=EuWGiws6e18" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
@@ -545,40 +583,40 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <a class="card" data-cat="tv" data-featured="false" href="https://globoplay.globo.com/v/13646620/?s=0s" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://globoplay.globo.com/v/13646620/?s=0s" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Jun 2025" data-pt="GloboNews Internacional · Jun 2025">GloboNews Internacional · Jun 2025</div>
-          <div class="card-title" data-en="GloboNews Internacional analysis" data-pt="GloboNews Internacional">GloboNews Internacional</div>
+          <div class="card-title" data-en="GloboNews Internacional" data-pt="GloboNews Internacional">GloboNews Internacional</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <a class="card" data-cat="tv" data-featured="false" href="https://globoplay.globo.com/v/13649792/" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://globoplay.globo.com/v/13649792/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews · Jun 2025" data-pt="GloboNews · Jun 2025">GloboNews · Jun 2025</div>
-          <div class="card-title" data-en="GloboNews late edition" data-pt="GloboNews — Edição Meia-Noite">GloboNews — Edição Meia-Noite</div>
+          <div class="card-title" data-en="GloboNews — Edição Meia-Noite" data-pt="GloboNews — Edição Meia-Noite">GloboNews — Edição Meia-Noite</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <a class="card" data-cat="tv" data-featured="false" href="https://www.youtube.com/watch?v=gLrHawWwoRI" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://www.youtube.com/watch?v=gLrHawWwoRI" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews · Jun 2025" data-pt="GloboNews · Jun 2025">GloboNews · Jun 2025</div>
-          <div class="card-title" data-en="GloboNews morning edition" data-pt="GloboNews — Edição das 10h">GloboNews — Edição das 10h</div>
+          <div class="card-title" data-en="GloboNews — Edição das 10h" data-pt="GloboNews — Edição das 10h">GloboNews — Edição das 10h</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <!-- ===== 2025 MAI ===== -->
+    <!-- 2025 MAI -->
     <a class="card" data-featured="true" data-cat="internet" href="https://ge.globo.com/futebol/times/botafogo/noticia/2025/05/22/o-que-mudou-entre-o-acerto-com-artur-e-a-ruptura-com-wendel-entenda-as-questoes-geopoliticas-citadas-pelo-botafogo.ghtml" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
@@ -612,7 +650,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <!-- ===== 2025 MAR ===== -->
+    <!-- 2025 MAR -->
     <a class="card" data-featured="true" data-cat="internet" href="https://oglobo.globo.com/blogs/guga-chacra/post/2025/03/entrevista-como-ucranianos-veem-a-briga-zelensky-versus-trump.ghtml" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
@@ -635,103 +673,102 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <a class="card" data-cat="tv" data-featured="false" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/13405071/" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/13405071/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Mar 2025" data-pt="GloboNews Internacional · Mar 2025">GloboNews Internacional · Mar 2025</div>
-          <div class="card-title" data-en="GloboNews Internacional analysis" data-pt="GloboNews Internacional">GloboNews Internacional</div>
+          <div class="card-title" data-en="GloboNews Internacional" data-pt="GloboNews Internacional">GloboNews Internacional</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <!-- ===== 2025 FEV ===== -->
-    <a class="card" data-cat="tv" data-featured="false" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/13347762/" target="_blank" rel="noopener">
+    <!-- 2025 FEV/JAN -->
+    <a class="card" data-featured="false" data-cat="tv" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/13347762/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Feb 2025" data-pt="GloboNews Internacional · Fev 2025">GloboNews Internacional · Fev 2025</div>
-          <div class="card-title" data-en="GloboNews Internacional analysis" data-pt="GloboNews Internacional">GloboNews Internacional</div>
+          <div class="card-title" data-en="GloboNews Internacional" data-pt="GloboNews Internacional">GloboNews Internacional</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <a class="card" data-cat="tv" data-featured="false" href="https://www.youtube.com/watch?v=_tHg816DnXA" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://www.youtube.com/watch?v=_tHg816DnXA" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="Conexão GloboNews · Feb 2025" data-pt="Conexão GloboNews · Fev 2025">Conexão GloboNews · Fev 2025</div>
-          <div class="card-title" data-en="Conexão GloboNews analysis" data-pt="Conexão GloboNews">Conexão GloboNews</div>
+          <div class="card-title" data-en="Conexão GloboNews" data-pt="Conexão GloboNews">Conexão GloboNews</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <!-- ===== 2025 JAN ===== -->
-    <a class="card" data-cat="tv" data-featured="false" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/13234917/" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/13234917/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Jan 2025" data-pt="GloboNews Internacional · Jan 2025">GloboNews Internacional · Jan 2025</div>
-          <div class="card-title" data-en="GloboNews Internacional analysis" data-pt="GloboNews Internacional">GloboNews Internacional</div>
+          <div class="card-title" data-en="GloboNews Internacional" data-pt="GloboNews Internacional">GloboNews Internacional</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <a class="card" data-cat="tv" data-featured="false" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/13290443/" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/13290443/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Jan 2025" data-pt="GloboNews Internacional · Jan 2025">GloboNews Internacional · Jan 2025</div>
-          <div class="card-title" data-en="GloboNews Internacional analysis" data-pt="GloboNews Internacional">GloboNews Internacional</div>
+          <div class="card-title" data-en="GloboNews Internacional" data-pt="GloboNews Internacional">GloboNews Internacional</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <!-- ===== 2024 ===== -->
-    <a class="card" data-cat="tv" data-featured="false" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/1318635" target="_blank" rel="noopener">
+    <!-- 2024 -->
+    <a class="card" data-featured="false" data-cat="tv" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/1318635" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Dec 2024" data-pt="GloboNews Internacional · Dez 2024">GloboNews Internacional · Dez 2024</div>
-          <div class="card-title" data-en="GloboNews Internacional analysis" data-pt="GloboNews Internacional">GloboNews Internacional</div>
+          <div class="card-title" data-en="GloboNews Internacional" data-pt="GloboNews Internacional">GloboNews Internacional</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <a class="card" data-cat="tv" data-featured="false" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/12903396/" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/12903396/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Sep 2024" data-pt="GloboNews Internacional · Set 2024">GloboNews Internacional · Set 2024</div>
-          <div class="card-title" data-en="GloboNews Internacional analysis" data-pt="GloboNews Internacional">GloboNews Internacional</div>
+          <div class="card-title" data-en="GloboNews Internacional" data-pt="GloboNews Internacional">GloboNews Internacional</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <a class="card" data-cat="tv" data-featured="false" href="https://canaisglobo.globo.com/assistir/globonews/jornal-das-dez/v/12955115/" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://canaisglobo.globo.com/assistir/globonews/jornal-das-dez/v/12955115/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="Jornal das 10 · Sep 2024" data-pt="Jornal das 10 · Set 2024">Jornal das 10 · Set 2024</div>
-          <div class="card-title" data-en="Jornal das 10 analysis" data-pt="Jornal das 10">Jornal das 10</div>
+          <div class="card-title" data-en="Jornal das 10" data-pt="Jornal das 10">Jornal das 10</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <a class="card" data-cat="tv" data-featured="false" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/12701948/" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/12701948/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Jun 2024" data-pt="GloboNews Internacional · Jun 2024">GloboNews Internacional · Jun 2024</div>
-          <div class="card-title" data-en="GloboNews Internacional analysis (from New York)" data-pt="GloboNews Internacional (de Nova York)">GloboNews Internacional (de Nova York)</div>
+          <div class="card-title" data-en="GloboNews Internacional (from New York)" data-pt="GloboNews Internacional (de Nova York)">GloboNews Internacional (de Nova York)</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
@@ -741,7 +778,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       <div class="card-inner">
         <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
         <div class="card-meta">
-          <div class="card-venue" data-en="CBN · Mar 2024" data-pt="CBN Show da Notícia · Mar 2024">CBN Show da Notícia · Mar 2024</div>
+          <div class="card-venue" data-en="CBN Show da Notícia · Mar 2024" data-pt="CBN Show da Notícia · Mar 2024">CBN Show da Notícia · Mar 2024</div>
           <div class="card-title" data-en="The Russian electoral system is a democratic facade for Putin's authoritarianism" data-pt="O sistema eleitoral russo é uma fachada democrática que encobre o autoritarismo de Putin">O sistema eleitoral russo é uma fachada democrática que encobre o autoritarismo de Putin</div>
           <div class="card-prog">CBN</div>
         </div>
@@ -770,18 +807,18 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <a class="card" data-cat="tv" data-featured="false" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/12366968/" target="_blank" rel="noopener">
+    <a class="card" data-featured="false" data-cat="tv" href="https://canaisglobo.globo.com/assistir/globonews/globonews-internacional/v/12366968/" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb tv" style="background:#1A1A18;border-left:3px solid #E63946">▶ TV</div>
         <div class="card-meta">
           <div class="card-venue" data-en="GloboNews Internacional · Feb 2024" data-pt="GloboNews Internacional · Fev 2024">GloboNews Internacional · Fev 2024</div>
-          <div class="card-title" data-en="GloboNews Internacional analysis" data-pt="GloboNews Internacional">GloboNews Internacional</div>
+          <div class="card-title" data-en="GloboNews Internacional" data-pt="GloboNews Internacional">GloboNews Internacional</div>
           <div class="card-prog">GloboNews</div>
         </div>
       </div>
     </a>
 
-    <!-- ===== 2023 — hidden by default ===== -->
+    <!-- 2023 -->
     <a class="card" data-featured="false" data-cat="internet" href="https://www.youtube.com/watch?v=kbblcytcP9U" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb internet" style="background:#0A1A1A;border-left:3px solid #34D399">◇ WEB</div>
@@ -817,7 +854,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
 
     <a class="card" data-featured="false" data-cat="ac" href="https://congresso.abraji.org.br/memoria-mesa/como-enfrentamos-putin-o-jornalismo-russo-no-exilio" target="_blank" rel="noopener">
       <div class="card-inner">
-        <div class="card-thumb ac" style="background:#0F1828;border-left:3px solid #3B82F6">◈ EVENT</div>
+        <div class="card-thumb ac" style="background:#0A1E38;border-left:3px solid #3B82F6">◈ EVENT</div>
         <div class="card-meta">
           <div class="card-venue" data-en="Abraji · Jul 2023" data-pt="Abraji · Jul 2023">Abraji · Jul 2023</div>
           <div class="card-title" data-en="How do we fight Putin? Russian journalism in exile" data-pt="Como enfrentamos Putin? O jornalismo russo no exílio">Como enfrentamos Putin? O jornalismo russo no exílio</div>
@@ -861,7 +898,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
 
     <a class="card" data-featured="false" data-cat="pod" href="https://cbn.globoradio.globo.com/media/audio/401369/guerra-na-ucrania-completa-1-ano-sem-perspectiva-d.htm" target="_blank" rel="noopener">
       <div class="card-inner">
-        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
+        <div class="card-thumb pod" style="background:#1E1228;border-left:3px solid #8B5CF6">◉ POD</div>
         <div class="card-meta">
           <div class="card-venue" data-en="CBN Internacional · Feb 2023" data-pt="CBN Internacional · Fev 2023">CBN Internacional · Fev 2023</div>
           <div class="card-title" data-en="One year of war in Ukraine: no end in sight" data-pt="1 ano de guerra na Ucrânia sem perspectiva de fim">1 ano de guerra na Ucrânia sem perspectiva de fim</div>
@@ -870,7 +907,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
       </div>
     </a>
 
-    <!-- ===== 2022 — hidden by default ===== -->
+    <!-- 2022 -->
     <a class="card" data-featured="false" data-cat="radio" href="https://cbn.globoradio.globo.com/media/audio/395517/dez-meses-de-guerra-na-ucrania-inverno-se-aproxima.htm" target="_blank" rel="noopener">
       <div class="card-inner">
         <div class="card-thumb radio" style="background:#3D1A0A;border-left:3px solid #F97316">◎ RÁDIO</div>
@@ -917,7 +954,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
 
     <a class="card" data-featured="false" data-cat="pod" href="https://g1.globo.com/podcast/o-assunto/noticia/2022/03/31/o-assunto-676-donbass-a-guerra-antes-da-guerra.ghtml" target="_blank" rel="noopener">
       <div class="card-inner">
-        <div class="card-thumb pod" style="background:#1E1428;border-left:3px solid #8B5CF6">◉ POD</div>
+        <div class="card-thumb pod" style="background:#1E1228;border-left:3px solid #8B5CF6">◉ POD</div>
         <div class="card-meta">
           <div class="card-venue" data-en="O Assunto · Mar 2022" data-pt="O Assunto · Mar 2022">O Assunto · Mar 2022</div>
           <div class="card-title" data-en="Donbass: the war before the war" data-pt="Donbass: a guerra antes da guerra">Donbass: a guerra antes da guerra</div>
@@ -1039,14 +1076,12 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
   </div>
 </div>
 
-<!-- UATV HIGHLIGHT -->
 <div class="highlight">
   <div class="hl-tag" data-en="International highlight" data-pt="Destaque internacional">Destaque internacional</div>
   <div class="hl-quote" data-en='"Researcher on information warfare Fabrício Vitorino: Brazil is an important battlefield"' data-pt='"Pesquisador de guerra informacional Fabrício Vitorino: o Brasil é um campo de batalha importante"'>"Pesquisador de guerra informacional Fabrício Vitorino: o Brasil é um campo de batalha importante"</div>
   <a class="hl-src" href="https://www.youtube.com/watch?v=WojEpMrNoDc" target="_blank" rel="noopener" style="color:#5A5850;text-decoration:underline;text-underline-offset:3px">UATV — Ukrainian Public Television · Nov 2025 →</a>
 </div>
 
-<!-- RESEARCH -->
 <div class="section" id="research" style="background:#EEEAE0">
   <div class="sec-hdr">
     <h2 class="sec-title" data-en="Research" data-pt="Pesquisa">Pesquisa</h2>
@@ -1135,7 +1170,6 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
   </div>
 </div>
 
-<!-- ABOUT -->
 <div class="about" id="about">
   <div class="at-tag" data-en="About" data-pt="Sobre">Sobre</div>
   <h2 class="at-hl" data-en="At the intersection of journalism, digital and geopolitics" data-pt="Na fronteira entre o jornalismo, o digital e a geopolítica">Na fronteira entre o jornalismo, o digital e a geopolítica</h2>
@@ -1153,7 +1187,6 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
   </div>
 </div>
 
-<!-- CONTACT -->
 <div class="contact" id="contact">
   <h2 class="contact-title" data-en="Contact" data-pt="Contato">Contato</h2>
   <div class="contact-links">
