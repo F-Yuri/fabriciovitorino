@@ -1326,10 +1326,14 @@ document.querySelectorAll('.tab').forEach(tab => {
   });
 });
 
-// Inicializa: mostra só featured
+// Inicializa: mostra só os 10 primeiros featured
+let count = 0;
 document.querySelectorAll('.card').forEach(card => {
   if (card.getAttribute('data-featured') === 'false') {
     card.style.display = 'none';
+  } else {
+    count++;
+    if (count > 10) card.style.display = 'none';
   }
 });
 </script>
