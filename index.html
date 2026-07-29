@@ -1371,14 +1371,14 @@ document.querySelectorAll('.tab').forEach(tab => {
   });
 });
 
-// Inicializa: mostra só os 20 primeiros featured
+// Inicializa: mostra só os 10 primeiros featured (apenas na seção Trabalhos)
 let count = 0;
-document.querySelectorAll('.card').forEach(card => {
+document.querySelectorAll('#cards-container .card').forEach(card => {
   if (card.getAttribute('data-featured') === 'false') {
     card.style.display = 'none';
   } else {
     count++;
-    if (count > 20) card.style.display = 'none';
+    if (count > 10) card.style.display = 'none';
   }
 });
 </script>
