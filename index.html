@@ -1278,6 +1278,7 @@ footer{padding:16px 20px;background:#EEEAE0;border-top:0.5px solid #DDD8CE;displ
 <div class="section" id="research" style="background:#EEEAE0">
   <div class="sec-hdr">
     <h2 class="sec-title" data-en="Research" data-pt="Pesquisa">Pesquisa</h2>
+    <a class="sec-more" href="#research" id="pesquisa-ver-todos" data-en="View all →" data-pt="Ver todos →">Ver todos →</a>
   </div>
   <div class="cards">
     <div class="card" style="cursor:default">
@@ -1638,6 +1639,28 @@ document.querySelectorAll('#cards-container .card').forEach(card => {
     if (count > 15) card.style.display = 'none';
   }
 });
+
+// Pesquisa: mostra só os 15 primeiros; "Ver todos →" revela os demais
+const PESQUISA_LIMIT = 15;
+let pesquisaExpandida = false;
+const pesquisaCards = document.querySelectorAll('#research .card');
+function aplicaLimitePesquisa() {
+  const btn = document.getElementById('pesquisa-ver-todos');
+  const todos = document.querySelector('.tab.on').getAttribute('data-filter') === 'all';
+  btn.style.display = (todos && !pesquisaExpandida) ? '' : 'none';
+  if (!todos) return;  // com filtro ativo a Pesquisa continua escondida, como hoje
+  pesquisaCards.forEach((card, i) => {
+    card.style.display = (pesquisaExpandida || i < PESQUISA_LIMIT) ? 'block' : 'none';
+  });
+}
+aplicaLimitePesquisa();
+document.getElementById('pesquisa-ver-todos').addEventListener('click', function () {
+  pesquisaExpandida = true;
+  aplicaLimitePesquisa();
+});
+// reaplica depois dos handlers existentes (que fazem display:block em todos os .card)
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', aplicaLimitePesquisa));
+document.querySelector('#work .sec-more').addEventListener('click', aplicaLimitePesquisa);
 </script>
 </body>
 </html>
