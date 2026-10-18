@@ -1628,14 +1628,14 @@ document.querySelectorAll('.tab').forEach(tab => {
   });
 });
 
-// Inicializa: mostra só os 10 primeiros featured (apenas na seção Trabalhos)
+// Inicializa: mostra só os 15 primeiros featured (apenas na seção Trabalhos)
 let count = 0;
 document.querySelectorAll('#cards-container .card').forEach(card => {
   if (card.getAttribute('data-featured') === 'false') {
     card.style.display = 'none';
   } else {
     count++;
-    if (count > 10) card.style.display = 'none';
+    if (count > 15) card.style.display = 'none';
   }
 });
 </script>
